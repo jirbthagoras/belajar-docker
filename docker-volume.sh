@@ -14,3 +14,7 @@ docker container create --name mongovolume --publish 27019:27017 --mount "type=v
 docker container --name nginxbackup --mount "type=bind,source=/home/jirb/Main/Belajar/Docker/belajar-docker-dasar/backup,destination=/backup" --mount "type=volume,source=mongodata,destination=/data" nginx:latest
 
 # to instantly remove backup container, add --rm in the create command and change create to run, and add backup command after image:tag phrase
+
+
+# to check/inspect a specific volume
+docker volume inspect mongovolume

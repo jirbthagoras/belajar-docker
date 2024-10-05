@@ -36,3 +36,6 @@ docker container create --name smallnginx --memory 100m --cpus 0.5 --publish 808
 
 # to mount a specific file/folder from host to container
 docker container create --name contohmongo --publish 27018:27017 --mount "type=bind,source=/home/jirb/Main/Belajar/Docker/belajar-docker-dasar/mongo-data,destination=/data/db"  --env MONGO_INITDB_ROOT_USERNAME=eko --env MONGO_INITDB_ROOT_PASSWORD=eko mongo:latest
+
+# to check/inspect a specific docker container
+docker container inspect mongonetwork
