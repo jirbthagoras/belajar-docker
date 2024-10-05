@@ -18,3 +18,6 @@ docker container --name nginxbackup --mount "type=bind,source=/home/jirb/Main/Be
 
 # to check/inspect a specific volume
 docker volume inspect mongovolume
+
+# to delete unused volume
+docker volume prune

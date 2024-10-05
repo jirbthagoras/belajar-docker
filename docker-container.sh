@@ -39,3 +39,6 @@ docker container create --name contohmongo --publish 27018:27017 --mount "type=b
 
 # to check/inspect a specific docker container
 docker container inspect mongonetwork
+
+# to delete all unused container
+docker container prune

@@ -9,3 +9,6 @@ docker image rm redis:latest
 
 # to check/inspect specific image
 docker image inspect redis
+
+# to delete all unused image
+docker image prune

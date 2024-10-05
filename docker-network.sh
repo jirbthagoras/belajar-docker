@@ -15,3 +15,6 @@ docker network connect mongonetwork mongodb
 
 # to check/inspect a specific network
 docker network inspect mongonetwork
+
+# to delete unused network
+docker network prune
